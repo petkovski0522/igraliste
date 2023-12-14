@@ -1,5 +1,7 @@
 // pages/about.tsx
 import { useState } from "react";
+import { GetStaticProps, NextPage } from "next";
+import Image from "next/image";
 
 interface AboutData {
   id: number;
@@ -13,18 +15,6 @@ interface AboutData {
 
 interface AboutProps {
   aboutData: AboutData;
-}
-
-export async function getStaticProps(): Promise<{ props: AboutProps }> {
-  // Fetch data from db.json or an API
-  const response = await fetch("http://localhost:3001/aboutus");
-  const data: AboutData = await response.json();
-
-  return {
-    props: {
-      aboutData: data,
-    },
-  };
 }
 
 const About: React.FC<AboutProps> = ({ aboutData }) => {
@@ -42,13 +32,23 @@ const About: React.FC<AboutProps> = ({ aboutData }) => {
 
       {showStory ? (
         <>
-          <img src={aboutData.storyImage} alt="About Story" />
+          <Image
+            src={aboutData.storyImage}
+            alt="About Story"
+            width={200}
+            height={300}
+          />
           <h3>{aboutData.storyTitle}</h3>
           <p>{aboutData.storyText}</p>
         </>
       ) : (
         <>
-          <img src={aboutData.workImage} alt="About Work" />
+          <Image
+            src={aboutData.workImage}
+            alt="About Work"
+            width={200}
+            height={300}
+          />
           <h3>{aboutData.workTitle}</h3>
           <p>{aboutData.workText}</p>
         </>
@@ -56,5 +56,17 @@ const About: React.FC<AboutProps> = ({ aboutData }) => {
     </div>
   );
 };
+
+export async function getStaticProps(): Promise<{ props: AboutProps }> {
+  // Fetch data from db.json or an API
+  const response = await fetch("http://localhost:3001/aboutus");
+  const data: AboutData = await response.json();
+
+  return {
+    props: {
+      aboutData: data,
+    },
+  };
+}
 
 export default About;
