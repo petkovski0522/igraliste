@@ -38,7 +38,7 @@ const About: React.FC<AboutProps> = ({ aboutData }) => {
             width={200}
             height={300}
           />
-          <h3>{aboutData.storyTitle}</h3>
+          <h3>{storyTitle}</h3>
           <p>{aboutData.storyText}</p>
         </>
       ) : (
@@ -57,16 +57,30 @@ const About: React.FC<AboutProps> = ({ aboutData }) => {
   );
 };
 
-export async function getStaticProps(): Promise<{ props: AboutProps }> {
-  // Fetch data from db.json or an API
-  const response = await fetch("http://localhost:3001/aboutus");
-  const data: AboutData = await response.json();
+export const getStaticProps: GetStaticProps = async () => {
+  try {
+    const resAbout = await fetch("http://localhost:3001/aboutus");
+    if (!resAbout.ok) {
+      throw new Error(
+        `Failed to fetch data: ${resAbout.status} ${resAbout.statusText}`
+      );
+    }
 
-  return {
-    props: {
-      aboutData: data,
-    },
-  };
-}
+    const dataAbout: AboutData[] = await resAbout.json();
+
+    return {
+      props: {
+        aboutData: dataAbout,
+      },
+    };
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return {
+      props: {
+        aboutData: null,
+      },
+    };
+  }
+};
 
 export default About;
