@@ -1,0 +1,32 @@
+.card {
+  border: 0.4px #c2c2c2 solid;
+}
+
+.card:nth-child(even) {
+  background-color: white;
+}
+
+.card:nth-child(odd) {
+  background-color: #fff6f6;
+}
+
+.card h2 {
+  color: #8a8328;
+  font-family: "Cormorant Garamont";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.011em;
+  text-align: left;
+  margin: 10px 18px 6px;
+}
+
+.card p {
+  font-family: "Cormorant Infant";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: -0.011em;
+  margin: 0 15px 10px;
+  color: #232221;
+}

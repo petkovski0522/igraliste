@@ -1,86 +1,82 @@
 // pages/about.tsx
+import { GetStaticProps } from "next";
 import { useState } from "react";
-import { GetStaticProps, NextPage } from "next";
 import Image from "next/image";
 
 interface AboutData {
   id: number;
-  storyTitle: string;
-  storyImage: string;
-  storyText: string;
-  workTitle: string;
-  workImage: string;
-  workText: string;
+  title: string;
+  story_btn: string;
+  story_Title: string;
+  story_Image: string;
+  story_Text: string;
+  work_Title: string;
+  work_btn: string;
+  work_Image: string;
+  work_Text: string;
 }
 
 interface AboutProps {
-  aboutData: AboutData;
+  aboutData: AboutData[];
 }
 
 const About: React.FC<AboutProps> = ({ aboutData }) => {
   const [showStory, setShowStory] = useState<boolean>(true);
+  const [showWork, setShowWork] = useState<boolean>(false);
 
-  const toggleContent = () => {
-    setShowStory((prev) => !prev);
+  const showStoryContent = () => {
+    setShowStory(true);
+    setShowWork(false);
+  };
+
+  const showWorkContent = () => {
+    setShowStory(false);
+    setShowWork(true);
   };
 
   return (
     <div>
-      <h2>About Us</h2>
-      <button onClick={toggleContent}>About Story</button>
-      <button onClick={toggleContent}>About Work</button>
+      <h2>{aboutData[0]?.title}</h2>
+      <button onClick={showStoryContent}>{aboutData[0]?.story_btn}</button>
+      <button onClick={showWorkContent}>{aboutData[0]?.work_btn}</button>
 
       {showStory ? (
         <>
-          <Image
-            src={aboutData.storyImage}
+          <img
+            src={aboutData[0]?.story_Image}
             alt="About Story"
             width={200}
             height={300}
           />
-          <h3>{storyTitle}</h3>
-          <p>{aboutData.storyText}</p>
+          <h3>{aboutData[0]?.story_Title}</h3>
+          <p>{aboutData[0]?.story_Text}</p>
         </>
       ) : (
         <>
-          <Image
-            src={aboutData.workImage}
+          <img
+            src={aboutData[0]?.work_Image}
             alt="About Work"
             width={200}
             height={300}
           />
-          <h3>{aboutData.workTitle}</h3>
-          <p>{aboutData.workText}</p>
+          <h3>{aboutData[0]?.work_Title}</h3>
+          <p>{aboutData[0]?.work_Text}</p>
         </>
       )}
     </div>
   );
 };
 
-export const getStaticProps: GetStaticProps = async () => {
-  try {
-    const resAbout = await fetch("http://localhost:3001/aboutus");
-    if (!resAbout.ok) {
-      throw new Error(
-        `Failed to fetch data: ${resAbout.status} ${resAbout.statusText}`
-      );
-    }
+export const getStaticProps: GetStaticProps<AboutProps> = async () => {
+  // Fetch data from your API or JSON file
+  const response = await fetch("http://localhost:3001/aboutus");
+  const data: AboutData[] = await response.json();
 
-    const dataAbout: AboutData[] = await resAbout.json();
-
-    return {
-      props: {
-        aboutData: dataAbout,
-      },
-    };
-  } catch (error) {
-    console.error("Error fetching data:", error);
-    return {
-      props: {
-        aboutData: null,
-      },
-    };
-  }
+  return {
+    props: {
+      aboutData: data,
+    },
+  };
 };
 
 export default About;
