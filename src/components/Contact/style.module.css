@@ -1,0 +1,11 @@
+.contactPage {
+  margin: 0 20px;
+  text-align: center;
+}
+.time p {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 35.2px;
+  letter-spacing: -1.1%;
+}

@@ -23,13 +23,14 @@ const ContactUs: React.FC<ContactPageProps> = ({
     <div className={style.contactInfo}>
       <h2>{name}</h2>
       <p>{text}</p>
-      <p>{address}</p>
-      <p>
-        {tel} {number}
-      </p>
-      <p>{workTime}</p>
-      <p>{week}</p>
-      <p>{weekend}</p>
+      <h3>{address}</h3>
+      <h3>{tel}</h3>
+      <p>{number}</p>
+      <div className={style.time}>
+        <h3>{workTime}</h3>
+        <p>{week}</p>
+        <p>{weekend}</p>
+      </div>
       <GoldButton label={contactBtn} />
     </div>
   </div>
