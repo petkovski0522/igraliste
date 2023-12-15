@@ -2,10 +2,17 @@
   margin: 0 20px;
   text-align: center;
 }
+.time {
+  margin-bottom: 20px;
+}
 .time p {
   font-family: "Cormorant Garamond", serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 35.2px;
   letter-spacing: -1.1%;
+  margin: 0;
+}
+.time h3 {
+  margin: 0;
 }

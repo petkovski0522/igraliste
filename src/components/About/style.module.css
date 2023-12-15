@@ -1,0 +1,59 @@
+.button {
+  background-color: #fff6f6;
+  color: #504e21;
+  font-family: "Cormorant Infant";
+  border: 1px solid #fff6f6;
+  font-style: italic;
+  border-radius: 8px;
+}
+.activeButton {
+  background-color: #fff6f6;
+  font-family: "Cormorant Infant";
+  font-style: italic;
+  color: #504e21;
+  border: 0.4px solid #504e21;
+  border-radius: 8px;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.about p {
+  margin: 0 auto;
+}
+
+.one img {
+  align-items: center;
+  justify-content: center; /*
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .container img {
+  margin-top: 10px; Adjust as needed */
+}
+
+.container img {
+  align-items: center;
+  justify-content: center;
+}
+
+.font {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -1.1%;
+}

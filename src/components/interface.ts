@@ -11,3 +11,16 @@ export interface ContactPageProps {
   weekend: string;
   contactBtn: string;
 }
+
+export interface AboutData {
+  id: number;
+  title: string;
+  story_btn: string;
+  story_Title: string;
+  story_Image: string[];
+  story_Text: string;
+  work_Title: string;
+  work_btn: string;
+  work_Image: string[];
+  work_Text: string;
+}

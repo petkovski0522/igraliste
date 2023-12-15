@@ -1,5 +1,5 @@
 .goldButton {
-  background-color: #ffd700; /* Gold color */
+  background: linear-gradient(#fff0bf, #efc990, #fdd292, #f0c749, #d4af37);
   color: #000; /* Black text */
   border: none;
   padding: 10px 20px;
