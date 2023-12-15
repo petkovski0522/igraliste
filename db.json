@@ -12,7 +12,7 @@
       "work_Title": "Нашата работа",
       "work_btn": "Нашата работа",
       "work_Image": [
-        "https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI"
+        "https://fastly.picsum.photos/id/879/200/300.jpg?grayscale&hmac=XY0Q_Ft_Juik1ldeXTLr_iJ5dSkf6lzWXBd0gsCvME4"
       ],
       "work_Text": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
     }
@@ -44,7 +44,17 @@
   ],
   "contact": {
     "title": "Контакт",
-    "img": "https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI",
+    "img": [
+      "https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI"
+    ],
+    "name": "Игралиште Дебар Маало",
+    "text": "Откриј ги нашите останати модни парчиња и колекции кои ги немаме изложено на нашата страна!",
+    "address": "Костурски Херои бр.6/14 Дебар Маало, Скопје",
+    "tel": "Телефон за контакт:",
+    "number": "+ 389 078 380 406",
+    "work_time": "Работно Време: ",
+    "week": "Понеделник - Петок 12:00 - 19:00. ",
+    "weekend": "Сабота 12:00 - 17:00",
     "contact_btn": "Кон продавницата"
   }
 }

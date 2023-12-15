@@ -1,8 +1,9 @@
 // pages/faq.tsx
 import React from "react";
-import FaqCard from "../components/Faq/FaqCard";
+import FaqList from "../components/Faq/FaqList";
 import { GetStaticProps } from "next";
 import style from "../styles/Home.module.css";
+import TitleWithImage from "@/components/Faq/TitleWithImage";
 
 interface FaqData {
   id: number;
@@ -18,14 +19,14 @@ interface FaqProps {
 const Faq: React.FC<FaqProps> = ({ faqData }) => {
   return (
     <div className={style.faq}>
-      <h1>{faqData[0]?.title}</h1>
-      {faqData.slice(1).map((faqItem) => (
-        <FaqCard
-          key={faqItem.id}
-          question={faqItem.question}
-          answer={faqItem.answer}
-        />
-      ))}
+      <TitleWithImage
+        title={faqData[0]?.title}
+        imagePath="/assets/images/sparks-elements-and-symbols-isolated-on-white-background-free-vector 2.png"
+        alt="Image Description"
+        width={50}
+        height={50}
+      />
+      <FaqList faqData={faqData} />
     </div>
   );
 };

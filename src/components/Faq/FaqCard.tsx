@@ -9,7 +9,7 @@ interface FaqCardProps {
 
 const FaqCard: React.FC<FaqCardProps> = ({ question, answer }) => (
   <div className={style.card}>
-    <h2>{question}</h2>
+    <h3>{question}</h3>
     <p>{answer}</p>
   </div>
 );
