@@ -22,7 +22,7 @@
 }
 
 .about {
-  width: 90%;
+  width: 100%;
 }
 
 .about p {
@@ -31,17 +31,14 @@
 
 .one img {
   align-items: center;
-  justify-content: center; /*
+  justify-content: center;
 }
 
 .container {
+  /* Your existing styles for the .container */
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-/* .container img {
-  margin-top: 10px; Adjust as needed */
+  align-items: center; /* Add this line to center items vertically */
 }
 
 .container img {

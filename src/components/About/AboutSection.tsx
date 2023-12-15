@@ -42,25 +42,27 @@ const AboutSection: React.FC<AboutSectionProps> = ({
       />
       <h2>{title}</h2>
     </div>
-    <div className={style.one}>
-      <Button
-        label={storyBtn}
-        onClick={() => onShowContent(true)}
-        active={showStory}
-      />
-      <Button
-        label={workBtn}
-        onClick={() => onShowContent(false)}
-        active={!showStory}
-      />
-
-      <div className={style.container}>
-        <img
-          src={showStory ? storyImage : workImage}
-          alt="About Image"
-          width={200}
-          height={300}
+    <div className={style.container}>
+      <div className={style.one}>
+        <Button
+          label={storyBtn}
+          onClick={() => onShowContent(true)}
+          active={showStory}
         />
+        <Button
+          label={workBtn}
+          onClick={() => onShowContent(false)}
+          active={!showStory}
+        />
+
+        <div>
+          <img
+            src={showStory ? storyImage : workImage}
+            alt="About Image"
+            width={300}
+            height={300}
+          />
+        </div>
       </div>
     </div>
     <h3>{showStory ? storyTitle : workTitle}</h3>

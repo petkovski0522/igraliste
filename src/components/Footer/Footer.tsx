@@ -67,25 +67,50 @@ export function Footer() {
         </div>
         <div className={style.social}>
           <span className={style.follow}>Следете не на:</span>
-          <div>
-            <FontAwesomeIcon icon={faInstagram} />
+          <div className={style.icon}>
             <Link
               href={"https://www.instagram.com/igraliste.sk/"}
               target="_blank"
             >
-              <span>igralishte.sk</span>
+              <a>
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  style={{
+                    color: "black",
+                    fontSize: "24px",
+                    marginRight: "8px",
+                  }}
+                />
+
+                <span>igralishte.sk</span>
+              </a>
             </Link>
           </div>
-          <div>
-            <FontAwesomeIcon icon={faTiktok} />
-            <Link href={""} target="_blank">
-              <span>igralishte.sk</span>
+          <div className={style.icon}>
+            <Link
+              href={
+                "https://www.tiktok.com/login?redirect_url=https%3A%2F%2Fwww.tiktok.com%2F%40igraliste.sk%3Flang%3Den&lang=en&enter_method=mandatory"
+              }
+              target="_blank"
+            >
+              <a>
+                <FontAwesomeIcon
+                  icon={faTiktok}
+                  style={{
+                    color: "#000000",
+                    fontSize: "24px",
+                    marginRight: "8px",
+                  }}
+                />
+
+                <span>igralishte.sk</span>
+              </a>
             </Link>
           </div>
         </div>
-        <div>
-          <p>Сите права задржани © 2023 igralishtesk.mk</p>
-        </div>
+      </div>
+      <div className={style.copy}>
+        <p>Сите права задржани © 2023 igralishtesk.mk</p>
       </div>
     </div>
   );
