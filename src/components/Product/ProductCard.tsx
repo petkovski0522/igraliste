@@ -15,7 +15,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ id, img, name, price }) => {
     <Link href={`/product/${id}`}>
       <a className={style.card}>
         <img src={img} alt={name} />
-        <div className="product-details">
+        <div className={style.productDetails}>
           <h3>{name}</h3>
           <p>{` ${price} ден`}</p>
         </div>

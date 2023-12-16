@@ -318,7 +318,7 @@
     {
       "id": "5",
       "img": [
-        "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fc5%2F7e%2Fc57e44b6d256d2d00cb90437605fe9bf68c8b05c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]"
+        "https://i.pinimg.com/736x/66/7f/27/667f279e1a6655389b00e8790e499530.jpg"
       ],
       "name": "Црвени панталони",
       "images": [
@@ -339,7 +339,7 @@
 
       "size": ["XS", "S", "M", "L", "XL"],
       "category": "Блузи",
-      "color": "red",
+      "color": "blue",
       "brand": "Pinc Partywear",
       "quantity": 10,
       "addToCartClicked": false,
@@ -351,11 +351,11 @@
       "tags": ["Casual", "Summer", "Fashion"]
     },
     {
-      "id": "4",
+      "id": "6",
       "img": [
-        "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fc5%2F7e%2Fc57e44b6d256d2d00cb90437605fe9bf68c8b05c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]"
+        "https://media.istockphoto.com/id/1252201853/vector/yellow-short-pants-vector-for-template.jpg?s=612x612&w=0&k=20&c=TN0ZEJuZIA05fMnhTfqWxVzXhD6-B58MNwGhfO9Y6bU="
       ],
-      "name": "Црвени панталони",
+      "name": "Жолти шорцеви",
       "images": [
         [
           "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
@@ -370,12 +370,12 @@
           "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
         ]
       ],
-      "price": 500,
+      "price": 1300,
 
       "size": ["XS", "S", "M", "L", "XL"],
-      "category": "Блузи",
-      "color": "red",
-      "brand": "Pinc Partywear",
+      "category": "Шорцеви",
+      "color": "yellow",
+      "brand": "Наш",
       "quantity": 10,
       "addToCartClicked": false,
       "addToFavorites": false,
