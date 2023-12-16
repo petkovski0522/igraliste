@@ -2,7 +2,7 @@
 import React from "react";
 import GiftCard, { GiftCardProps } from "./GiftCard"; // Corrected import
 import style from "./style.module.css";
-import GiftButton from "./GIftButton";
+import GiftButton from "./GiftButton";
 
 interface GiftPageProps {
   giftData: { cards: GiftCardProps[]; text: string };
