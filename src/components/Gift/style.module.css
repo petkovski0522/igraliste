@@ -1,25 +1,55 @@
 .giftButton {
   display: flex;
   flex-direction: column;
+  border-radius: 18px;
+  width: 70%;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1.8px solid;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  margin: 25px auto;
+  border: 1.8px solid rgba(194, 194, 194, 1);
+  box-shadow: 0px 0px 5.399999618530273px 0px rgba(194, 194, 194, 1);
+  font-size: 22px;
+  background-color: rgba(255, 246, 246, 1);
+  font-weight: normal;
+
+  /* components/style.module.css */
+}
+
+.giftButton:hover {
+  background-color: #f0f0f0; /* Add a background color on hover, adjust as needed */
 }
 
 /* components/GiftCard.module.css */
 .giftCard {
   position: relative;
+  border-radius: 6.25px;
+  margin-bottom: 30px;
 }
 
 .giftImage {
   width: 100%; /* Make sure the image takes the full width of the container */
 }
 
-.titleOverlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white; /* Set text color to white or adjust as needed */
+.second {
   text-align: center;
-  font-size: 1.5rem; /* Adjust font size as needed */
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
+}
+.second h3 {
+  font-size: 22px;
+  margin: 30px auto;
+  width: 100%;
+  font-weight: normal;
+}
+
+.main {
+  width: 90%;
+  margin: 0 auto;
+}
+.main h2 {
+  font-size: 22px;
+  font-weight: normal;
+  text-align: center;
 }

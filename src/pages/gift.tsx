@@ -6,9 +6,10 @@ export interface GiftCardProps {
   id: string;
   title: string;
   img: string;
+  text: string;
 }
 export interface GiftPageProps {
-  giftData: { cards: GiftCardProps[] };
+  giftData: { cards: GiftCardProps[]; text: string };
   prices: { choose: string; price: number[] };
 }
 

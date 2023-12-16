@@ -6,13 +6,13 @@ export interface GiftCardProps {
   id: string;
   title: string;
   img: string;
+  text: string;
 }
 
 const GiftCard: React.FC<GiftCardProps> = ({ id, title, img }) => {
   return (
     <div className={styles.giftCard}>
       <img className={styles.giftImage} src={img} alt={title} />
-      <div className={styles.titleOverlay}>{title}</div>
     </div>
   );
 };

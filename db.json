@@ -153,29 +153,342 @@
     "cards": [
       {
         "id": "1",
-        "title": "Partygirl Gift card",
-        "img": [
-          "https://fastly.picsum.photos/id/698/200/300.jpg?grayscale&hmac=csckNZkNW0U5GLikxNf4B_MEYrvpeHGunkr9fSAnbaI"
-        ]
+
+        "img": "/assets/images/gift-1.png"
       },
       {
         "id": "2",
-        "title": "Vintage chick Gift card",
-        "img": [
-          "https://fastly.picsum.photos/id/698/200/300.jpg?grayscale&hmac=csckNZkNW0U5GLikxNf4B_MEYrvpeHGunkr9fSAnbaI"
-        ]
+
+        "img": "/assets/images/gift-2.png"
       },
       {
         "id": "3",
-        "title": "Wavy baby Gift card",
-        "img": [
-          "https://fastly.picsum.photos/id/698/200/300.jpg?grayscale&hmac=csckNZkNW0U5GLikxNf4B_MEYrvpeHGunkr9fSAnbaI"
-        ]
+
+        "img": "/assets/images/gift-3.png"
       }
-    ]
+    ],
+    "text": "Gift картички за подарок"
   },
   "prices": {
-    "choose": "Choose",
+    "choose": "Одбери цена на подарок картичка:",
     "price": [500, 1000, 2000, 2500, 4000]
-  }
+  },
+
+  "products": [
+    {
+      "id": "1",
+      "img": [
+        "https://media.centrepointstores.com/i/centrepoint/15295267GREENMEDIUM-15295267-SS23190423_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+      ],
+      "name": "Зелена кратка блуза",
+      "images": [
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ],
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ],
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ],
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ]
+      ],
+      "price": 1500,
+
+      "size": ["XS", "S", "M", "L", "XL"],
+      "category": "Блузи",
+      "color": "green",
+      "brand": "Pinc Partywear",
+      "quantity": 10,
+      "addToCartClicked": false,
+      "addToFavorites": false,
+      "material": "100% Полиестер",
+      "condition": "New",
+      "conditionLink": "#",
+      "maintenanceGuidelines": "Ова парче треба да се третира хемиски според инструкциите на етикетата.",
+      "tags": ["Casual", "Summer", "Fashion"]
+    },
+    {
+      "id": "2",
+      "img": [
+        "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fc5%2F7e%2Fc57e44b6d256d2d00cb90437605fe9bf68c8b05c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]"
+      ],
+      "name": "Црвени панталони",
+      "images": [
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ],
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ],
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ],
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ]
+      ],
+      "price": 500,
+
+      "size": ["XS", "S", "M", "L", "XL"],
+      "category": "Панталони",
+      "color": "red",
+      "brand": "Pinc Partywear",
+      "quantity": 10,
+      "addToCartClicked": false,
+      "addToFavorites": false,
+      "material": "100% Полиестер",
+      "condition": "New",
+      "conditionLink": "#",
+      "maintenanceGuidelines": "Ова парче треба да се третира хемиски според инструкциите на етикетата.",
+      "tags": ["Casual", "Summer", "Fashion"]
+    },
+    {
+      "id": "3",
+      "img": [
+        "https://images.unsplash.com/photo-1644424232401-a93a1405d902?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDE3fHx8ZW58MHx8fHx8&w=1000&q=80"
+      ],
+      "name": " Црно палтo",
+      "images": [
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ],
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ],
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ],
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ]
+      ],
+      "price": 500,
+
+      "size": ["XS", "S", "M", "L", "XL"],
+      "category": "Палта",
+      "color": "black",
+      "brand": "Main Days",
+      "quantity": 10,
+      "addToCartClicked": false,
+      "addToFavorites": false,
+      "material": "100% Полиестер",
+      "condition": "New",
+      "conditionLink": "#",
+      "maintenanceGuidelines": "Ова парче треба да се третира хемиски според инструкциите на етикетата.",
+      "tags": ["Casual", "Summer", "Fashion"]
+    },
+    {
+      "id": "4",
+      "img": [
+        "https://media.istockphoto.com/id/1310374267/photo/white-dress-in-white-background-minimal-concept-idea-creative-monochrome-3d-render.jpg?s=612x612&w=0&k=20&c=7L9XY204CG-UVA5LHL5_-BreZ3Z1rDvksDtU26mmslY="
+      ],
+      "name": "Бел фустан",
+      "images": [
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ],
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ],
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ],
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ]
+      ],
+      "price": 500,
+
+      "size": ["XS", "S", "M", "L", "XL"],
+      "category": "Фустани",
+      "color": "white",
+      "brand": "Нежно",
+      "quantity": 10,
+      "addToCartClicked": false,
+      "addToFavorites": false,
+      "material": "100% Полиестер",
+      "condition": "New",
+      "conditionLink": "#",
+      "maintenanceGuidelines": "Ова парче треба да се третира хемиски според инструкциите на етикетата.",
+      "tags": ["Casual", "Summer", "Fashion"]
+    },
+    {
+      "id": "5",
+      "img": [
+        "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fc5%2F7e%2Fc57e44b6d256d2d00cb90437605fe9bf68c8b05c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]"
+      ],
+      "name": "Црвени панталони",
+      "images": [
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ],
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ],
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ],
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ]
+      ],
+      "price": 500,
+
+      "size": ["XS", "S", "M", "L", "XL"],
+      "category": "Блузи",
+      "color": "red",
+      "brand": "Pinc Partywear",
+      "quantity": 10,
+      "addToCartClicked": false,
+      "addToFavorites": false,
+      "material": "100% Полиестер",
+      "condition": "New",
+      "conditionLink": "#",
+      "maintenanceGuidelines": "Ова парче треба да се третира хемиски според инструкциите на етикетата.",
+      "tags": ["Casual", "Summer", "Fashion"]
+    },
+    {
+      "id": "4",
+      "img": [
+        "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fc5%2F7e%2Fc57e44b6d256d2d00cb90437605fe9bf68c8b05c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]"
+      ],
+      "name": "Црвени панталони",
+      "images": [
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ],
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ],
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ],
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ]
+      ],
+      "price": 500,
+
+      "size": ["XS", "S", "M", "L", "XL"],
+      "category": "Блузи",
+      "color": "red",
+      "brand": "Pinc Partywear",
+      "quantity": 10,
+      "addToCartClicked": false,
+      "addToFavorites": false,
+      "material": "100% Полиестер",
+      "condition": "New",
+      "conditionLink": "#",
+      "maintenanceGuidelines": "Ова парче треба да се третира хемиски според инструкциите на етикетата.",
+      "tags": ["Casual", "Summer", "Fashion"]
+    },
+    {
+      "id": "4",
+      "img": [
+        "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fc5%2F7e%2Fc57e44b6d256d2d00cb90437605fe9bf68c8b05c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]"
+      ],
+      "name": "Црвени панталони",
+      "images": [
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ],
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ],
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ],
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ]
+      ],
+      "price": 500,
+
+      "size": ["XS", "S", "M", "L", "XL"],
+      "category": "Блузи",
+      "color": "red",
+      "brand": "Pinc Partywear",
+      "quantity": 10,
+      "addToCartClicked": false,
+      "addToFavorites": false,
+      "material": "100% Полиестер",
+      "condition": "New",
+      "conditionLink": "#",
+      "maintenanceGuidelines": "Ова парче треба да се третира хемиски според инструкциите на етикетата.",
+      "tags": ["Casual", "Summer", "Fashion"]
+    },
+    {
+      "id": "4",
+      "img": [
+        "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fc5%2F7e%2Fc57e44b6d256d2d00cb90437605fe9bf68c8b05c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]"
+      ],
+      "name": "Црвени панталони",
+      "images": [
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ],
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ],
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ],
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ]
+      ],
+      "price": 500,
+
+      "size": ["XS", "S", "M", "L", "XL"],
+      "category": "Блузи",
+      "color": "red",
+      "brand": "Pinc Partywear",
+      "quantity": 10,
+      "addToCartClicked": false,
+      "addToFavorites": false,
+      "material": "100% Полиестер",
+      "condition": "New",
+      "conditionLink": "#",
+      "maintenanceGuidelines": "Ова парче треба да се третира хемиски според инструкциите на етикетата.",
+      "tags": ["Casual", "Summer", "Fashion"]
+    },
+    {
+      "id": "4",
+      "img": [
+        "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fc5%2F7e%2Fc57e44b6d256d2d00cb90437605fe9bf68c8b05c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]"
+      ],
+      "name": "Црвени панталони",
+      "images": [
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ],
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ],
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ],
+        [
+          "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
+        ]
+      ],
+      "price": 500,
+
+      "size": ["XS", "S", "M", "L", "XL"],
+      "category": "Блузи",
+      "color": "red",
+      "brand": "Pinc Partywear",
+      "quantity": 10,
+      "addToCartClicked": false,
+      "addToFavorites": false,
+      "material": "100% Полиестер",
+      "condition": "New",
+      "conditionLink": "#",
+      "maintenanceGuidelines": "Ова парче треба да се третира хемиски според инструкциите на етикетата.",
+      "tags": ["Casual", "Summer", "Fashion"]
+    }
+  ]
 }

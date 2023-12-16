@@ -10,7 +10,7 @@ interface GiftButtonProps {
 const GiftButton: React.FC<GiftButtonProps> = ({ price, onClick }) => {
   return (
     <button className={style.giftButton} onClick={onClick}>
-      {`${price} ден`}
+      {`${price} ден.`}
     </button>
   );
 };
