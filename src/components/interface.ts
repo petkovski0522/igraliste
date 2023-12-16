@@ -24,3 +24,12 @@ export interface AboutData {
   work_Image: string[];
   work_Text: string;
 }
+
+// interfaces.ts
+export interface Product {
+  id: string;
+  img: string;
+  name: string;
+  price: number;
+  // Add other properties as needed
+}

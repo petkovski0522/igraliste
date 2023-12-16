@@ -3,6 +3,8 @@
 import React from "react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import BrandDetailsPage from "../../components/Brand/BrandDetailsPage"; // Update the path as needed
+import ProductCardContainer from "../../components/Product/ProductCardContainer"; // Import the ProductCardContainer component
+import { Product } from "@/components/interface";
 
 interface Brand {
   id: number;
@@ -14,10 +16,17 @@ interface Brand {
 
 interface BrandDetailsProps {
   brand: Brand;
+  products: Product[];
 }
 
-const BrandDetails: React.FC<BrandDetailsProps> = ({ brand }) => {
-  return <BrandDetailsPage brand={brand} />;
+const BrandDetails: React.FC<BrandDetailsProps> = ({ brand, products }) => {
+  return (
+    <>
+      <BrandDetailsPage brand={brand} />
+      <ProductCardContainer products={products} />{" "}
+      {/* Use ProductCardContainer as intended */}
+    </>
+  );
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -37,12 +46,18 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps<BrandDetailsProps> = async ({
   params,
 }) => {
-  const response = await fetch(`http://localhost:3001/brands/${params.id}`); // Update the URL as needed
-  const brand: Brand = await response.json();
+  const brandResponse = await fetch(
+    `http://localhost:3001/brands/${params.id}`
+  );
+  const brand: Brand = await brandResponse.json();
 
+  const productsResponse = await fetch(`http://localhost:3001/products`);
+  const products: Product[] = await productsResponse.json();
+  const limitedProducts = products.slice(0, 6);
   return {
     props: {
       brand,
+      products: limitedProducts,
     },
   };
 };

@@ -2,6 +2,7 @@
 import React from "react";
 import { GetServerSideProps, GetServerSidePropsContext } from "next";
 import Image from "next/image";
+import AnnouncementBar from "@/components/Cyhron/AnnouncementBar";
 
 interface Product {
   id: string;
@@ -17,8 +18,14 @@ interface ProductPageProps {
 }
 
 const ProductPage: React.FC<ProductPageProps> = ({ product }) => {
+  const announcementContent = {
+    text: "Нова колекција ",
+    additionalText: "Valentines Winter Collection 2023   ",
+    imgSrc: "/assets/imagesAbout/emojione-monotone_eight-pointed-star.png",
+  };
   return (
     <div>
+      <AnnouncementBar {...announcementContent} />
       <h1>{product.name}</h1>
       <div>
         <img

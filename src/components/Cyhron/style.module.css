@@ -12,7 +12,7 @@
 
 .marqueeContent {
   display: inline-block;
-  animation: marquee 20s linear infinite;
+  animation: marquee 10s linear infinite;
 }
 
 .contentItem {
@@ -38,6 +38,22 @@
     transform: translateX(100%);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(0%);
+  }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  .marqueeContent {
+    animation: marquee-mobile 15s linear infinite;
+  }
+
+  @keyframes marquee-mobile {
+    from {
+      transform: translateX(10%);
+    }
+    to {
+      transform: translateX(-80%);
+    }
   }
 }

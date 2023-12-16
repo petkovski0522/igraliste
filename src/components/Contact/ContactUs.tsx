@@ -4,6 +4,7 @@ import React from "react";
 import GoldButton from "../GoldButton/GoldButton";
 import style from "./style.module.css";
 import { ContactPageProps } from "../interface";
+import Link from "next/link";
 
 const ContactUs: React.FC<ContactPageProps> = ({
   title,
@@ -31,7 +32,9 @@ const ContactUs: React.FC<ContactPageProps> = ({
         <p>{week}</p>
         <p>{weekend}</p>
       </div>
-      <GoldButton label={contactBtn} />
+      <Link href={"/product"}>
+        <GoldButton label={contactBtn} />
+      </Link>
     </div>
   </div>
 );

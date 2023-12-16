@@ -42,13 +42,15 @@
 }
 
 .carouselContainer {
-  height: 400px; /* Set your desired fixed height for the carousel container */
+  height: 100vh; /* Set your desired fixed height for the carousel container */
   position: relative;
+  overflow: hidden;
 }
 
 .carouselImage {
   object-fit: cover; /* Ensure images cover the container without distortion */
   height: 100%; /* Take full height of the container */
+  width: 100%;
 }
 
 .carouselText {
@@ -63,4 +65,60 @@
     0.8
   ); /* Optional: Add a semi-transparent background for better readability */
   padding: 10px;
+}
+
+.one {
+  height: 500px;
+  width: 100%;
+}
+
+/* style.module.css */
+
+.cardAlternate {
+  /* display: flex;
+  flex-wrap: wrap; */
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  width: 48%; /* 48% to leave some space between cards */
+  /* margin-right: 2%; 2% to leave some space between cards */
+  margin-bottom: 20px;
+}
+
+.productCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cardAlternate:last-child {
+  margin-right: 0; /* Remove right margin for the last card in the row */
+}
+
+.cardAlternate:hover {
+  transform: translateY(-5px);
+}
+
+.cardAlternate img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #3498db;
+}
+
+.productDetailsAlternate {
+  padding: 15px;
+  text-align: center;
+}
+
+.productDetailsAlternate h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #3498db;
+}
+
+.productDetailsAlternate p {
+  margin: 5px 0 0;
+  font-size: 1.2rem;
+  color: #444;
 }

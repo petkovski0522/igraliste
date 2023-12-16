@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import AboutSection from "../components/About/AboutSection";
 import styles from "../styles/About.module.css";
+import AnnouncementBar from "@/components/Cyhron/AnnouncementBar";
 
 interface AboutData {
   id: number;
@@ -30,21 +31,29 @@ const About: React.FC<AboutProps> = ({ aboutData }) => {
   };
 
   const contentData = aboutData[0];
+  const announcementContent = {
+    text: "Нова колекција ",
+    additionalText: "Valentines Winter Collection 2023   ",
+    imgSrc: "/assets/imagesAbout/emojione-monotone_eight-pointed-star.png",
+  };
 
   return (
-    <AboutSection
-      title={contentData.title}
-      storyBtn={contentData.story_btn}
-      workBtn={contentData.work_btn}
-      storyImage={contentData.story_Image[0]}
-      storyTitle={contentData.story_Title}
-      storyText={contentData.story_Text}
-      workImage={contentData.work_Image[0]}
-      workTitle={contentData.work_Title}
-      workText={contentData.work_Text}
-      showStory={showStory}
-      onShowContent={showContent}
-    />
+    <>
+      <AnnouncementBar {...announcementContent} />
+      <AboutSection
+        title={contentData.title}
+        storyBtn={contentData.story_btn}
+        workBtn={contentData.work_btn}
+        storyImage={contentData.story_Image[0]}
+        storyTitle={contentData.story_Title}
+        storyText={contentData.story_Text}
+        workImage={contentData.work_Image[0]}
+        workTitle={contentData.work_Title}
+        workText={contentData.work_Text}
+        showStory={showStory}
+        onShowContent={showContent}
+      />
+    </>
   );
 };
 

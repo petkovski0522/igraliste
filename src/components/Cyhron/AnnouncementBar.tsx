@@ -20,6 +20,14 @@ const AnnouncementBar: React.FC<IAnnouncement> = ({
         <span>{text}</span>
         <img src={imgSrc} alt="icon" />
         <span>{additionalText}</span>
+        <img src={imgSrc} alt="icon" />
+        <span>{text}</span>
+        <img src={imgSrc} alt="icon" />
+        <span>{additionalText}</span>
+        <img src={imgSrc} alt="icon" />
+        <span>{text}</span>
+        <img src={imgSrc} alt="icon" />
+        <span>{additionalText}</span>
       </div>
     </div>
   );

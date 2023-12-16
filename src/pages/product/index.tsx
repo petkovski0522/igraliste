@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { GetServerSideProps } from "next";
 import ProductList from "../../components/Product/ProductList";
 import style from "../../styles/Home.module.css";
+import AnnouncementBar from "@/components/Cyhron/AnnouncementBar";
 
 interface Product {
   id: string;
@@ -50,57 +51,66 @@ const ProductsPage: React.FC<ProductsPageProps> = ({ products }) => {
     );
   });
 
+  const announcementContent = {
+    text: "Нова колекција ",
+    additionalText: "Valentines Winter Collection 2023   ",
+    imgSrc: "/assets/imagesAbout/emojione-monotone_eight-pointed-star.png",
+  };
+
   return (
-    <div className={style.ProductList}>
-      <h1>Products Page</h1>
+    <>
+      <AnnouncementBar {...announcementContent} />
+      <div className={style.ProductList}>
+        <h1>Products Page</h1>
 
-      {/* Toggle Filters Button */}
-      <button onClick={toggleFilters}>
-        {showFilters ? "Hide Filters" : "Show Filters"}
-      </button>
+        {/* Toggle Filters Button */}
+        <button onClick={toggleFilters}>
+          {showFilters ? "Hide Filters" : "Show Filters"}
+        </button>
 
-      {/* Filters Section */}
-      {showFilters && (
-        <div>
-          {/* Category Buttons */}
+        {/* Filters Section */}
+        {showFilters && (
           <div>
-            <span>Category:</span>
-            {uniqueCategories.map((category) => (
-              <button
-                key={category}
-                onClick={() => handleFilterChange("category", category)}
-                className={filters.category === category ? style.active : ""}
-              >
-                {category}
-              </button>
-            ))}
-          </div>
+            {/* Category Buttons */}
+            <div>
+              <span>Category:</span>
+              {uniqueCategories.map((category) => (
+                <button
+                  key={category}
+                  onClick={() => handleFilterChange("category", category)}
+                  className={filters.category === category ? style.active : ""}
+                >
+                  {category}
+                </button>
+              ))}
+            </div>
 
-          {/* Brand Checkboxes */}
-          <div>
-            <span>Brands:</span>
-            {uniqueBrands.map((brand) => (
-              <label key={brand}>
-                <input
-                  type="checkbox"
-                  checked={filters.brands.includes(brand)}
-                  onChange={() => {
-                    const newBrands = filters.brands.includes(brand)
-                      ? filters.brands.filter((b) => b !== brand)
-                      : [...filters.brands, brand];
-                    handleFilterChange("brands", newBrands);
-                  }}
-                />
-                {brand}
-              </label>
-            ))}
+            {/* Brand Checkboxes */}
+            <div>
+              <span>Brands:</span>
+              {uniqueBrands.map((brand) => (
+                <label key={brand}>
+                  <input
+                    type="checkbox"
+                    checked={filters.brands.includes(brand)}
+                    onChange={() => {
+                      const newBrands = filters.brands.includes(brand)
+                        ? filters.brands.filter((b) => b !== brand)
+                        : [...filters.brands, brand];
+                      handleFilterChange("brands", newBrands);
+                    }}
+                  />
+                  {brand}
+                </label>
+              ))}
+            </div>
           </div>
-        </div>
-      )}
+        )}
 
-      {/* Product List */}
-      <ProductList products={filteredProducts} />
-    </div>
+        {/* Product List */}
+        <ProductList products={filteredProducts} />
+      </div>
+    </>
   );
 };
 

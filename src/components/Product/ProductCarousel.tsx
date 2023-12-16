@@ -23,18 +23,20 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({ products }) => {
         {products.map((product) => (
           <Carousel.Item key={product.id}>
             <Link href={`/product/${product.id}`}>
-              <a>
-                <img
-                  className={`d-block w-100 ${style.carouselImage}`}
-                  src={product.img[0]}
-                  alt={product.id}
-                />
+              <div className={style.one}>
+                <a>
+                  <img
+                    className={`d-block w-100 ${style.carouselImage}`}
+                    src={product.img[0]}
+                    alt={product.id}
+                  />
 
-                <div className={style.carouselText}>
-                  <h3>{product.name}</h3>
-                  <p>{product.price}</p>
-                </div>
-              </a>
+                  <div className={style.carouselText}>
+                    <h3>{product.name}</h3>
+                    <p>{product.price}</p>
+                  </div>
+                </a>
+              </div>
             </Link>
           </Carousel.Item>
         ))}

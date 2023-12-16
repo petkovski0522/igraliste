@@ -8,16 +8,16 @@ import Header from "@/components/Header/Header";
 import AnnouncementBar from "@/components/Cyhron/AnnouncementBar";
 
 export default function App({ Component, pageProps }: AppProps) {
-  const announcementContent = {
-    text: "Нова колекција ",
-    additionalText: "Valentines Winter Collection 2023",
-    imgSrc: "/assets/imagesAbout/emojione-monotone_eight-pointed-star.png",
-  };
+  // const announcementContent = {
+  //   text: "Нова колекција ",
+  //   additionalText: "Valentines Winter Collection 2023   ",
+  //   imgSrc: "/assets/imagesAbout/emojione-monotone_eight-pointed-star.png",
+  // };
 
   return (
     <>
       <Header />
-      <AnnouncementBar {...announcementContent} />
+      {/* <AnnouncementBar {...announcementContent} /> */}
       <Component {...pageProps} />
       <Footer />
     </>
