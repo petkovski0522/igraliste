@@ -1,16 +1,31 @@
-// components/Header.tsx
-import React, { useState } from "react";
+// Header.tsx
+
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faSearch } from "@fortawesome/free-solid-svg-icons";
 import style from "./style.module.css";
-import Menu from "./Menu";
-import { allItems } from "./menuItem";
-import Link from "next/link";
 
-interface HeaderProps {
-  items: string[]; // Assuming Menu component accepts an array of strings
-}
+const Header: React.FC = () => {
+  const [isMenuOpen, setMenuOpen] = useState(false);
 
-export default function Header() {
-  return <div></div>;
-}
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
+
+  return (
+    <div className={style.main}>
+      <div className={style.menuIcon} onClick={toggleMenu}>
+        <FontAwesomeIcon icon={faBars} />
+      </div>
+      <div className={style.logo}>
+        {/* Place your logo or image component here */}
+        <img src="/path/to/your/image.png" alt="Logo" />
+      </div>
+      <div className={style.searchIcon}>
+        <FontAwesomeIcon icon={faSearch} />
+      </div>
+    </div>
+  );
+};
+
+export default Header;

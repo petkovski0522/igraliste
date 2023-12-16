@@ -1,0 +1,25 @@
+.giftButton {
+  display: flex;
+  flex-direction: column;
+}
+
+/* components/GiftCard.module.css */
+.giftCard {
+  position: relative;
+}
+
+.giftImage {
+  width: 100%; /* Make sure the image takes the full width of the container */
+}
+
+.titleOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Set text color to white or adjust as needed */
+  text-align: center;
+  font-size: 1.5rem; /* Adjust font size as needed */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
+}

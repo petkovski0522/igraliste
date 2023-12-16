@@ -1,0 +1,18 @@
+.news-ticker-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.news-ticker {
+  white-space: nowrap;
+  animation: scrollLeft 20s linear infinite;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

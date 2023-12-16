@@ -147,5 +147,35 @@
       "brandInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "brandDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et orci nec turpis eleifend posuere."
     }
-  ]
+  ],
+
+  "gift": {
+    "cards": [
+      {
+        "id": "1",
+        "title": "Partygirl Gift card",
+        "img": [
+          "https://fastly.picsum.photos/id/698/200/300.jpg?grayscale&hmac=csckNZkNW0U5GLikxNf4B_MEYrvpeHGunkr9fSAnbaI"
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Vintage chick Gift card",
+        "img": [
+          "https://fastly.picsum.photos/id/698/200/300.jpg?grayscale&hmac=csckNZkNW0U5GLikxNf4B_MEYrvpeHGunkr9fSAnbaI"
+        ]
+      },
+      {
+        "id": "3",
+        "title": "Wavy baby Gift card",
+        "img": [
+          "https://fastly.picsum.photos/id/698/200/300.jpg?grayscale&hmac=csckNZkNW0U5GLikxNf4B_MEYrvpeHGunkr9fSAnbaI"
+        ]
+      }
+    ]
+  },
+  "prices": {
+    "choose": "Choose",
+    "price": [500, 1000, 2000, 2500, 4000]
+  }
 }
