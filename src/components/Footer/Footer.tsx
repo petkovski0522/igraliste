@@ -1,23 +1,27 @@
 import style from "./style.module.css";
-import React, { useState } from "react";
+import React, { useState, ChangeEvent } from "react";
 import Link from "next/link";
 import GoldButton from "../GoldButton/GoldButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faTiktok } from "@fortawesome/free-brands-svg-icons";
 
-export function Footer() {
-  const [memberValue, setEmailValue] = useState("");
+export default function Footer() {
+  const [emailValue, setEmailValue] = useState("");
 
-  const handleJoin = () => {
-    console.log("mail submitted");
-    if (memberValue) {
-      localStorage.setItem("userEmail", memberValue);
-      setEmailValue("");
+  const handleSubscribe = () => {
+    console.log("Email submitted");
+    if (emailValue) {
+      try {
+        localStorage.setItem("userEmail", emailValue);
+        setEmailValue("");
+      } catch (error) {
+        console.error("Failed to save email to localStorage:", error);
+      }
     }
   };
 
-  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleEmailChange = (e: ChangeEvent<HTMLInputElement>) => {
     setEmailValue(e.target.value);
   };
 
@@ -33,12 +37,12 @@ export function Footer() {
         </div>
         <div className={style.email}>
           <label htmlFor="email">E-mail Адреса:</label>
-          <input type="text" value={memberValue} onChange={handleEmailChange} />
+          <input type="text" value={emailValue} onChange={handleEmailChange} />
           <div className={style.button}>
             <GoldButton
               className={style.buttonWidth90}
               label={"Зачлени се"}
-              onClick={handleJoin}
+              onClick={handleSubscribe}
             />
           </div>
         </div>
@@ -51,7 +55,9 @@ export function Footer() {
               <li>Контакт</li>
             </Link>
             <Link
-              href={"https://maps.app.goo.gl/ixMmnQzZETyvH7y87"}
+              href={
+                "https://www.google.com/maps/search/Igrali%C5%A1te/@41.9993664,21.4225622,21z?hl=en-US&entry=ttu"
+              }
               target="_blank"
             >
               <li>Локатор на Продавницата</li>
@@ -108,12 +114,10 @@ export function Footer() {
             </Link>
           </div>
         </div>
-      </div>
-      <div className={style.copy}>
-        <p>Сите права задржани © 2023 igralishtesk.mk</p>
+        <div className={style.copy}>
+          <p>Сите права задржани © 2023 igralishtesk.mk</p>
+        </div>
       </div>
     </div>
   );
 }
-
-export default Footer;

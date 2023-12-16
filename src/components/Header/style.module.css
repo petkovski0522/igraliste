@@ -1,0 +1,40 @@
+/* styles/style.module.css */
+.headerContainer {
+  position: relative;
+}
+
+.mobileHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  color: black;
+}
+
+.menuIcon,
+.searchIcon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  max-width: 100px;
+  max-height: 30px;
+}
+
+.menu {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  background-color: white;
+  color: black;
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}

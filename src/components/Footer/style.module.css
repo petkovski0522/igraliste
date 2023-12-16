@@ -1,13 +1,10 @@
 .footer {
   background: linear-gradient(
     360deg,
-    #ffdbdb -52.68%,
+    #ffdbdb -50.68%,
     #fdfdfd 68.98%,
     #fdfdfd 91.87%
   );
-  height: 870px;
-
-  /* margin: 0px auto; */
   display: flex;
   flex-direction: column;
 }
@@ -29,11 +26,11 @@
 .text h2 {
   font-family: "Century", sans-serif;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 33px;
   letter-spacing: -1.1%;
 
-  text-align: left;
+  text-align: center;
 }
 .text p {
   font-family: Cormorant Garamond;
@@ -47,13 +44,13 @@
 .email {
   display: flex;
   flex-direction: column;
+  border-bottom: 2px solid black;
 }
 .email input {
   box-shadow: 0px 0px 5.399999618530273px 0px #c2c2c2;
   width: 100%;
   height: 50px;
-  top: 215px;
-  left: 32px;
+
   border-radius: 18px;
   border: 1.8px;
   border: 1.8px solid #c2c2c2;
@@ -82,6 +79,7 @@
   color: #232221;
   list-style: none;
   text-decoration: none;
+  font-family: Cormorant Garamond;
 }
 .list ul {
   padding-inline-start: 0px;
@@ -109,20 +107,24 @@
 }
 
 .button {
-  margin: 20px 0;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .social a {
   text-decoration: none;
   color: #232221;
-  margin: 20px 0;
+  margin-top: 20px;
 }
 .follow {
   margin: 25px 0;
+  font-style: italic;
 }
 
 .copy {
-  margin-top: 60px;
+  color: black;
+  text-align: left;
+  font-size: 10px;
 }
 
 .icon {

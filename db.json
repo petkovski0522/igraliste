@@ -56,5 +56,96 @@
     "week": "Понеделник - Петок 12:00 - 19:00. ",
     "weekend": "Сабота 12:00 - 17:00",
     "contactBtn": "Кон продавницата"
-  }
+  },
+
+  "brands": [
+    {
+      "id": 1,
+      "brandName": "Pinc Partywear",
+      "brandIMG": "url_to_image/pinc_partywear.jpg",
+      "brandInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "brandDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et orci nec turpis eleifend posuere."
+    },
+    {
+      "id": 2,
+      "brandName": "Factory Girl",
+      "brandIMG": "url_to_image/factory_girl.jpg",
+      "brandInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "brandDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et orci nec turpis eleifend posuere."
+    },
+    {
+      "id": 3,
+      "brandName": "Main Days",
+      "brandIMG": "url_to_image/main_days.jpg",
+      "brandInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "brandDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et orci nec turpis eleifend posuere."
+    },
+    {
+      "id": 4,
+      "brandName": "Нежно",
+      "brandIMG": "url_to_image/nezhno.jpg",
+      "brandInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "brandDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et orci nec turpis eleifend posuere."
+    },
+    {
+      "id": 5,
+      "brandName": "Ред",
+      "brandIMG": "url_to_image/red.jpg",
+      "brandInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "brandDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et orci nec turpis eleifend posuere."
+    },
+    {
+      "id": 6,
+      "brandName": "Наш",
+      "brandIMG": "url_to_image/nash.jpg",
+      "brandInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "brandDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et orci nec turpis eleifend posuere."
+    },
+    {
+      "id": 7,
+      "brandName": "Зш да не",
+      "brandIMG": "url_to_image/zsh_da_ne.jpg",
+      "brandInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "brandDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et orci nec turpis eleifend posuere."
+    },
+    {
+      "id": 8,
+      "brandName": "Fraeil",
+      "brandIMG": "url_to_image/fraeil.jpg",
+      "brandInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "brandDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et orci nec turpis eleifend posuere."
+    },
+    {
+      "id": 9,
+      "brandName": "Urma",
+      "brandIMG": "url_to_image/urma.jpg",
+      "brandInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "brandDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et orci nec turpis eleifend posuere."
+    },
+    {
+      "id": 10,
+      "brandName": "Candle Nest",
+      "brandIMG": "url_to_image/candle_nest.jpg",
+      "brandInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "brandDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et orci nec turpis eleifend posuere."
+    },
+    {
+      "id": 11,
+      "brandName": "Beyond Green",
+      "brandIMG": [
+        "https://fastly.picsum.photos/id/698/200/300.jpg?grayscale&hmac=csckNZkNW0U5GLikxNf4B_MEYrvpeHGunkr9fSAnbaI"
+      ],
+      "brandInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "brandDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et orci nec turpis eleifend posuere."
+    },
+    {
+      "id": 12,
+      "brandName": "Gatta",
+      "brandIMG": [
+        "https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI"
+      ],
+      "brandInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "brandDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et orci nec turpis eleifend posuere."
+    }
+  ]
 }
