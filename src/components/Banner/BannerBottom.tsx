@@ -12,7 +12,15 @@ export default function BannerBottom() {
             className={style.image}
           />
           <Link href={"/gift"}>
-            <div className={`${style.circle} ${style.circleBottom}`}></div>
+            <div className={`${style.circle} ${style.circleBottom}`}>
+              <div className={style.textContainer}>
+                <h3>GIFT CARDS</h3>
+                <p>
+                  Избери уникатен подарок за твоите најблиски со нашиот избор на
+                  ultra fancy картички за подарок.
+                </p>
+              </div>
+            </div>
           </Link>
         </div>
       </div>

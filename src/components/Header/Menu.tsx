@@ -36,19 +36,19 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
 
   const vintageCategories = [
     { category: "Види ги сите", link: "/product" },
-    { category: "Панталони", link: "/product/category/pants" },
+    { category: "Панталони", link: "/product" },
     {
       category: "Здолништа / Шорцеви",
-      link: "/products/category/skirts-shorts",
+      link: "/product",
     },
-    { category: "Фустани", link: "/product/category/dresses" },
-    { category: "Палта и јакни", link: "/product/category/coats-jackets" },
-    { category: "Долна облека", link: "/product/category/bottom-wear" },
+    { category: "Фустани", link: "/product" },
+    { category: "Палта и јакни", link: "/product" },
+    { category: "Долна облека", link: "/product" },
   ];
   const vintageCategoriesAccessory = [
     { category: "Види ги сите", link: "/product" },
-    { category: "Ташни", link: "/product/category/bags" },
-    { category: "Накит", link: "/product/category/jewelry" },
+    { category: "Ташни", link: "/product" },
+    { category: "Накит", link: "/product" },
   ];
 
   return (
@@ -91,7 +91,17 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
       <Link href={"/gift"}>
         <li>Подари картичка*</li>
       </Link>
-      <li>Menu Item 7</li>
+      <Link href={"/product"}>
+        <li>Попуст</li>
+      </Link>
+      <div className={style.menuDown}>
+        <li>Кошничка</li>
+        <li>Омилени</li>
+        <li>
+          <Link href={"/register"}>Регистрирај се</Link> /{" "}
+          <Link href={"/login"}>логирај се</Link>
+        </li>
+      </div>
     </ul>
   );
 };
