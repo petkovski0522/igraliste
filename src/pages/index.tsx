@@ -7,6 +7,9 @@ import ProductCarousel from "../components/Product/ProductCarousel";
 import AnnouncementBar from "@/components/Cyhron/AnnouncementBar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import style from "../styles/Home.module.css";
+import BannerTop from "@/components/Banner/BannerTop";
+import BannerMid from "../components/Banner/BannerMid";
+import BannerBottom from "@/components/Banner/BannerBottom";
 
 interface Product {
   id: string;
@@ -28,9 +31,14 @@ const Home: React.FC<HomeProps> = ({ products }) => {
   return (
     <>
       <AnnouncementBar {...announcementContent} />
-      <div className={style.home}>
-        <h3>Trendy парчиња во моментов</h3>
-        <ProductCarousel products={products} />
+      <div className={style.page}>
+        <BannerTop />
+        <div className={style.home}>
+          <h3>Trendy парчиња во моментов</h3>
+          <ProductCarousel products={products} />
+        </div>
+        <BannerMid />
+        <BannerBottom />
       </div>
     </>
   );

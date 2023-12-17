@@ -17,15 +17,17 @@ const ProductCardAlternate: React.FC<ProductCardAlternateProps> = ({
   price,
 }) => {
   return (
-    <Link href={`/product/${id}`}>
-      <a className={style.cardAlternate}>
-        <img src={img} alt={name} />
-        <div className={style.productDetailsAlternate}>
-          <h3>{name}</h3>
-          <p>{`Price: ${price} ден`}</p>
-        </div>
-      </a>
-    </Link>
+    <div className={style.imgcontainer}>
+      <Link href={`/product/${id}`}>
+        <a className={style.cardAlternate}>
+          <img src={img} alt={name} />
+          <div className={style.productDetailsAlternate}>
+            <h3>{name}</h3>
+            <p>{`Price: ${price} ден`}</p>
+          </div>
+        </a>
+      </Link>
+    </div>
   );
 };
 

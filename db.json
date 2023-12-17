@@ -62,70 +62,90 @@
     {
       "id": 1,
       "brandName": "Pinc Partywear",
-      "brandIMG": "url_to_image/pinc_partywear.jpg",
+      "brandIMG": [
+        "https://fastly.picsum.photos/id/1079/200/300.jpg?hmac=2_Q-8QGaabS7GsZLCCM2JvTkNhZFjwv5K2wVnJ8CjKI"
+      ],
       "brandInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "brandDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et orci nec turpis eleifend posuere."
     },
     {
       "id": 2,
       "brandName": "Factory Girl",
-      "brandIMG": "url_to_image/factory_girl.jpg",
+      "brandIMG": [
+        "https://fastly.picsum.photos/id/1079/200/300.jpg?hmac=2_Q-8QGaabS7GsZLCCM2JvTkNhZFjwv5K2wVnJ8CjKI"
+      ],
       "brandInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "brandDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et orci nec turpis eleifend posuere."
     },
     {
       "id": 3,
       "brandName": "Main Days",
-      "brandIMG": "url_to_image/main_days.jpg",
+      "brandIMG": [
+        "https://fastly.picsum.photos/id/1079/200/300.jpg?hmac=2_Q-8QGaabS7GsZLCCM2JvTkNhZFjwv5K2wVnJ8CjKI"
+      ],
       "brandInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "brandDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et orci nec turpis eleifend posuere."
     },
     {
       "id": 4,
       "brandName": "Нежно",
-      "brandIMG": "url_to_image/nezhno.jpg",
+      "brandIMG": [
+        "https://fastly.picsum.photos/id/1079/200/300.jpg?hmac=2_Q-8QGaabS7GsZLCCM2JvTkNhZFjwv5K2wVnJ8CjKI"
+      ],
       "brandInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "brandDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et orci nec turpis eleifend posuere."
     },
     {
       "id": 5,
       "brandName": "Ред",
-      "brandIMG": "url_to_image/red.jpg",
+      "brandIMG": [
+        "https://fastly.picsum.photos/id/1079/200/300.jpg?hmac=2_Q-8QGaabS7GsZLCCM2JvTkNhZFjwv5K2wVnJ8CjKI"
+      ],
       "brandInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "brandDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et orci nec turpis eleifend posuere."
     },
     {
       "id": 6,
       "brandName": "Наш",
-      "brandIMG": "url_to_image/nash.jpg",
+      "brandIMG": [
+        "https://fastly.picsum.photos/id/1079/200/300.jpg?hmac=2_Q-8QGaabS7GsZLCCM2JvTkNhZFjwv5K2wVnJ8CjKI"
+      ],
       "brandInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "brandDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et orci nec turpis eleifend posuere."
     },
     {
       "id": 7,
       "brandName": "Зш да не",
-      "brandIMG": "url_to_image/zsh_da_ne.jpg",
+      "brandIMG": [
+        "https://fastly.picsum.photos/id/1079/200/300.jpg?hmac=2_Q-8QGaabS7GsZLCCM2JvTkNhZFjwv5K2wVnJ8CjKI"
+      ],
       "brandInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "brandDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et orci nec turpis eleifend posuere."
     },
     {
       "id": 8,
       "brandName": "Fraeil",
-      "brandIMG": "url_to_image/fraeil.jpg",
+      "brandIMG": [
+        "https://fastly.picsum.photos/id/1079/200/300.jpg?hmac=2_Q-8QGaabS7GsZLCCM2JvTkNhZFjwv5K2wVnJ8CjKI"
+      ],
       "brandInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "brandDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et orci nec turpis eleifend posuere."
     },
     {
       "id": 9,
       "brandName": "Urma",
-      "brandIMG": "url_to_image/urma.jpg",
+      "brandIMG": [
+        "https://fastly.picsum.photos/id/1079/200/300.jpg?hmac=2_Q-8QGaabS7GsZLCCM2JvTkNhZFjwv5K2wVnJ8CjKI"
+      ],
       "brandInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "brandDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et orci nec turpis eleifend posuere."
     },
     {
       "id": 10,
       "brandName": "Candle Nest",
-      "brandIMG": "url_to_image/candle_nest.jpg",
+      "brandIMG": [
+        "https://fastly.picsum.photos/id/1079/200/300.jpg?hmac=2_Q-8QGaabS7GsZLCCM2JvTkNhZFjwv5K2wVnJ8CjKI"
+      ],
       "brandInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "brandDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et orci nec turpis eleifend posuere."
     },

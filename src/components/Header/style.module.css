@@ -33,7 +33,7 @@
   width: 100%;
   height: 100%;
   background-color: white;
-  padding: 16px;
+  padding: 40px;
   box-sizing: border-box;
   z-index: 1000;
 }
@@ -47,6 +47,32 @@
   cursor: pointer;
 }
 
-.menu div:hover {
-  background-color: #555;
+.menu li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit the color from the parent */
+  cursor: pointer; /* Set cursor to pointer for links */
+  outline: none; /* Remove outline */
+}
+.acc {
+  display: flex;
+  padding: 1px;
+  margin: 0;
+  justify-content: start;
+}
+.acc li div {
+  padding: 0;
+}
+
+.accordionHeader {
+  padding: 1px;
+}
+
+.accordionContent {
+  padding: 0; /* Remove the padding for the accordion content */
+  display: block;
 }

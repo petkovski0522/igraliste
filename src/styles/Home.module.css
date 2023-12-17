@@ -13,7 +13,12 @@
 .productList {
   width: 100%;
 }
+.page {
+  display: flex;
+  flex-direction: column;
+}
 
 .home {
   height: 600px;
+  margin: 0 30px;
 }

@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import Carousel from "react-bootstrap/Carousel";
 import style from "./style.module.css";
+import { CarouselItem } from "react-bootstrap";
 
 interface Product {
   id: string;
@@ -21,7 +22,7 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({ products }) => {
     <div className={style.carouselContainer}>
       <Carousel>
         {products.map((product) => (
-          <Carousel.Item key={product.id}>
+          <Carousel.Item key={product.id} className={style.CarouselItem}>
             <Link href={`/product/${product.id}`}>
               <div className={style.one}>
                 <a>

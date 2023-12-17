@@ -7,7 +7,11 @@ import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import AnnouncementBar from "@/components/Cyhron/AnnouncementBar";
 
-export default function App({ Component, pageProps }: AppProps) {
+const excludedRoutes = ["/order", "/login"];
+
+export default function App({ Component, pageProps, router }: AppProps) {
+  const shouldExcludeHeaderAndFooter = excludedRoutes.includes(router.pathname);
+
   // const announcementContent = {
   //   text: "Нова колекција ",
   //   additionalText: "Valentines Winter Collection 2023   ",
@@ -16,10 +20,10 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <Header />
+      {!shouldExcludeHeaderAndFooter && <Header />}
       {/* <AnnouncementBar {...announcementContent} /> */}
       <Component {...pageProps} />
-      <Footer />
+      {!shouldExcludeHeaderAndFooter && <Footer />}
     </>
   );
 }

@@ -4,6 +4,9 @@ import React, { ReactNode } from "react";
 import style from "./style.module.css";
 import Link from "next/link";
 import BrandsList from "./BrandsList";
+import { faArrowDown, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { accordionItems } from "./menuItem";
 
 interface MenuProps {
   isOpen: boolean;
@@ -42,16 +45,40 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
     { category: "Палта и јакни", link: "/product/category/coats-jackets" },
     { category: "Долна облека", link: "/product/category/bottom-wear" },
   ];
+  const vintageCategoriesAccessory = [
+    { category: "Види ги сите", link: "/product" },
+    { category: "Ташни", link: "/product/category/bags" },
+    { category: "Накит", link: "/product/category/jewelry" },
+  ];
 
   return (
     <ul className={`${style.menu} ${isOpen ? style.open : ""}`}>
       <Link href="/product">
-        <li onClick={handleLinkClick}>Menu Item 1</li>
+        <li>Ново</li>
       </Link>
-
-      <AccordionItem title="Vintage облека">
-        <ul>
-          {vintageCategories.map((category) => (
+      <div className={style.acc}>
+        <AccordionItem title="Vintage облека">
+          <ul className={style.accordionItems}>
+            {vintageCategories.map((category) => (
+              <li key={category.category}>
+                <Link href={category.link}>
+                  <a onClick={handleLinkClick}>{category.category}</a>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </AccordionItem>
+        <FontAwesomeIcon icon={faArrowDown} className={style.arrowIcon} />
+      </div>
+      <div className={style.acc}>
+        <AccordionItem title="Брендови">
+          <BrandsList brands={brands} />
+        </AccordionItem>
+        <FontAwesomeIcon icon={faArrowDown} className={style.arrowIcon} />
+      </div>
+      <AccordionItem title="Аксесоари">
+        <ul className={style.accordionItems}>
+          {vintageCategoriesAccessory.map((category) => (
             <li key={category.category}>
               <Link href={category.link}>
                 <a onClick={handleLinkClick}>{category.category}</a>
@@ -60,15 +87,10 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
           ))}
         </ul>
       </AccordionItem>
-      <AccordionItem title="Брендови">
-        <BrandsList brands={brands} />
-      </AccordionItem>
-      <AccordionItem title="Menu Item 3"></AccordionItem>
       <li>Lifestyle</li>
       <Link href={"/gift"}>
         <li>Подари картичка*</li>
       </Link>
-
       <li>Menu Item 7</li>
     </ul>
   );
