@@ -3,7 +3,7 @@
 import React from "react";
 import { GetStaticProps } from "next";
 import BrandCard from "../../components/Brand/BrandCard"; // Update the path as needed
-
+import style from "../../styles/Home.module.css";
 interface Brand {
   id: number;
   brandName: string;
@@ -18,8 +18,8 @@ interface BrandListProps {
 
 const BrandList: React.FC<BrandListProps> = ({ brands }) => {
   return (
-    <div>
-      <h1>All Brands</h1>
+    <div className={style.brand}>
+      <h1>Сите брендови</h1>
       {brands.map((brand) => (
         <BrandCard key={brand.id} {...brand} />
       ))}

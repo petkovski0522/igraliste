@@ -1,6 +1,8 @@
 // components/BrandCard.tsx
 
 import React from "react";
+import Link from "next/link";
+import style from "./style.module.css";
 
 interface BrandCardProps {
   id: number;
@@ -16,13 +18,17 @@ const BrandCard: React.FC<BrandCardProps> = ({
   brandInfo,
 }) => {
   return (
-    <div>
-      <a href={`/brand/${id}`}>
-        <h2>{brandName}</h2>
-        <img src={brandIMG} alt={brandName} />
-        <p>{brandInfo}</p>
-        See Details
-      </a>
+    <div className={style.brandCard}>
+      <div className={style.brandContainer}>
+        <Link href={`/brand/${id}`}>
+          <a>
+            <h2>{brandName}</h2>
+            <img src={brandIMG} alt={brandName} />
+            <p>{brandInfo}</p>
+            See Details
+          </a>
+        </Link>
+      </div>
     </div>
   );
 };

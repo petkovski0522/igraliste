@@ -72,7 +72,7 @@
       "id": 2,
       "brandName": "Factory Girl",
       "brandIMG": [
-        "https://fastly.picsum.photos/id/1079/200/300.jpg?hmac=2_Q-8QGaabS7GsZLCCM2JvTkNhZFjwv5K2wVnJ8CjKI"
+        "https://fastly.picsum.photos/id/658/200/300.jpg?hmac=K1TI0jSVU6uQZCZkkCMzBiau45UABMHNIqoaB9icB_0"
       ],
       "brandInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "brandDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et orci nec turpis eleifend posuere."
@@ -408,7 +408,7 @@
       "tags": ["Casual", "Summer", "Fashion"]
     },
     {
-      "id": "4",
+      "id": "7",
       "img": [
         "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fc5%2F7e%2Fc57e44b6d256d2d00cb90437605fe9bf68c8b05c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]"
       ],
@@ -443,7 +443,7 @@
       "tags": ["Casual", "Summer", "Fashion"]
     },
     {
-      "id": "4",
+      "id": "8",
       "img": [
         "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fc5%2F7e%2Fc57e44b6d256d2d00cb90437605fe9bf68c8b05c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]"
       ],
@@ -479,7 +479,7 @@
       "tags": ["Casual", "Summer", "Fashion"]
     },
     {
-      "id": "4",
+      "id": "9",
       "img": [
         "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fc5%2F7e%2Fc57e44b6d256d2d00cb90437605fe9bf68c8b05c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]"
       ],
@@ -498,7 +498,7 @@
           "https://media.centrepointstores.com/i/centrepoint/15300041GREENDARK-15300041-AW23260623_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
         ]
       ],
-      "price": 500,
+      "price": 900,
 
       "size": ["XS", "S", "M", "L", "XL"],
       "category": "Блузи",
@@ -513,6 +513,22 @@
       "createdAt": 1641092000,
       "maintenanceGuidelines": "Ова парче треба да се третира хемиски според инструкциите на етикетата.",
       "tags": ["Casual", "Summer", "Fashion"]
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "John",
+      "surname": "Doe",
+      "email": "john.doe@example.com",
+      "password": "Main1234",
+      "newsletter": true,
+      "profile": {
+        "address": "123 Main St",
+        "mobileNumber": "123-456-7890",
+        "bio": "A short bio about me.",
+        "profilePicture": "path/to/profile_picture_1.jpg"
+      }
     }
   ]
 }

@@ -1,6 +1,8 @@
 // components/BrandDetailsPage.tsx
 
 import React from "react";
+import BrandDetails from "../../pages/brand/[id]";
+import style from "./style.module.css";
 
 interface BrandDetailsPageProps {
   brand: {
@@ -14,7 +16,7 @@ interface BrandDetailsPageProps {
 
 const BrandDetailsPage: React.FC<BrandDetailsPageProps> = ({ brand }) => {
   return (
-    <div>
+    <div className={style.brandDetails}>
       <h1>{brand.brandName}</h1>
       <img src={brand.brandIMG} alt={brand.brandName} />
       <p>{brand.brandInfo}</p>

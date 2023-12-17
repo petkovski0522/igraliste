@@ -1,0 +1,18 @@
+.brandCard a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color */
+  cursor: pointer;
+}
+.brandCard {
+  margin-top: 20px;
+  border: black 1px solid;
+}
+.brandCard:last-child {
+  margin-bottom: 20px;
+}
+.brandContainer {
+  background-color: rgb(255, 235, 235);
+}
+.brandDetails {
+  text-align: center;
+}
