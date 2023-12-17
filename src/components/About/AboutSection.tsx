@@ -44,16 +44,18 @@ const AboutSection: React.FC<AboutSectionProps> = ({
     </div>
     <div className={style.container}>
       <div className={style.one}>
-        <Button
-          label={storyBtn}
-          onClick={() => onShowContent(true)}
-          active={showStory}
-        />
-        <Button
-          label={workBtn}
-          onClick={() => onShowContent(false)}
-          active={!showStory}
-        />
+        <div className={style.centeredButtons}>
+          <Button
+            label={storyBtn}
+            onClick={() => onShowContent(true)}
+            active={showStory}
+          />
+          <Button
+            label={workBtn}
+            onClick={() => onShowContent(false)}
+            active={!showStory}
+          />
+        </div>
 
         <div>
           <img

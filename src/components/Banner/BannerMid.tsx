@@ -14,7 +14,7 @@ export default function BannerMid() {
           <Link href={"/product"}>
             <div className={style.circleMid}>
               <div className={style.textContainer}>
-                <h3>Valentines gal Kолекција</h3>
+                <h3>Козметика & аксесоари</h3>
                 <p>Погледни ги свежите љубовни парчиња</p>
               </div>
             </div>

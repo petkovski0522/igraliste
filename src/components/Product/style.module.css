@@ -42,7 +42,7 @@
 }
 
 .carouselContainer {
-  height: 40vh; /* Set your desired fixed height for the carousel container */
+  height: 100vh; /* Set your desired fixed height for the carousel container */
   position: relative;
   overflow: hidden;
 }
@@ -74,26 +74,22 @@
 
 /* style.module.css */
 
-.cardAlternate {
-  /* display: flex;
-  flex-wrap: wrap; */
+/* style.module.css */
 
+.cardAlternate {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
-  width: 48%; /* 48% to leave some space between cards */
-  /* margin-right: 2%; 2% to leave some space between cards */
+  box-sizing: border-box; /* Add this line */
+  flex: 0 0 48%;
   margin-bottom: 20px;
-}
-
-.productCardContainer {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .cardAlternate:last-child {
-  margin-right: 0; /* Remove right margin for the last card in the row */
+  margin-right: 0;
 }
 
 .cardAlternate:hover {
@@ -102,13 +98,17 @@
 
 .cardAlternate img {
   max-width: 100%;
-  height: 100%;
+  height: auto; /* Set height to auto so that the image maintains its aspect ratio */
   object-fit: cover;
 }
 
 .productDetailsAlternate {
   padding: 15px;
   text-align: center;
+  flex-grow: 1; /* Allow the details section to grow and take available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure space between title and price */
 }
 
 .productDetailsAlternate h3 {
@@ -132,8 +132,15 @@
   font-size: 13px;
   font-family: Cormorant Garamond;
 }
-
-.imgcontainer {
+.productCardContainer {
   display: flex;
   flex-wrap: wrap;
+}
+
+.productCardContainer > * {
+  width: calc(50% - 16px); /* Calculate width with padding and margin */
+  box-sizing: border-box;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  /* margin: 8px; */
 }

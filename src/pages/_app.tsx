@@ -7,7 +7,7 @@ import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import AnnouncementBar from "@/components/Cyhron/AnnouncementBar";
 
-const excludedRoutes = ["/order", "/login"];
+const excludedRoutes = ["/order", "/login", "/search"];
 
 export default function App({ Component, pageProps, router }: AppProps) {
   const shouldExcludeHeaderAndFooter = excludedRoutes.includes(router.pathname);

@@ -41,9 +41,11 @@ const Header: React.FC = () => {
             <img src="/assets/imagesAbout/Group1.png" alt="Logo" />
           </div>
         </Link>
-        <div className={style.searchIcon}>
-          <FontAwesomeIcon icon={faSearch} />
-        </div>
+        <Link href="/search">
+          <div className={style.searchIcon}>
+            <FontAwesomeIcon icon={faSearch} />
+          </div>
+        </Link>
       </div>
       <Menu isOpen={isMenuOpen} onClose={() => setMenuOpen(false)} />
     </div>

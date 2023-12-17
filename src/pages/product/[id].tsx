@@ -31,8 +31,7 @@ const ProductPage: React.FC<ProductPageProps> = ({ product }) => {
         <img
           src={product.img[0]}
           alt={product.name}
-          width={800}
-          height={1200}
+          style={{ objectFit: "contain", maxWidth: "100%", height: "auto" }}
         />
       </div>
       <div>

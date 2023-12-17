@@ -5,6 +5,7 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import BrandDetailsPage from "../../components/Brand/BrandDetailsPage"; // Update the path as needed
 import ProductCardContainer from "../../components/Product/ProductCardContainer"; // Import the ProductCardContainer component
 import { Product } from "@/components/interface";
+import AnnouncementBar from "@/components/Cyhron/AnnouncementBar";
 
 interface Brand {
   id: number;
@@ -20,8 +21,14 @@ interface BrandDetailsProps {
 }
 
 const BrandDetails: React.FC<BrandDetailsProps> = ({ brand, products }) => {
+  const announcementContent = {
+    text: "Нова колекција ",
+    additionalText: "Valentines Winter Collection 2023   ",
+    imgSrc: "/assets/imagesAbout/emojione-monotone_eight-pointed-star.png",
+  };
   return (
     <>
+      <AnnouncementBar {...announcementContent} />
       <BrandDetailsPage brand={brand} />
       <ProductCardContainer products={products} />{" "}
       {/* Use ProductCardContainer as intended */}

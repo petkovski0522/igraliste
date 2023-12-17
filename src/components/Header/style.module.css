@@ -76,3 +76,11 @@
   padding: 0; /* Remove the padding for the accordion content */
   display: block;
 }
+
+.menuIcon {
+  font-size: 22px;
+}
+
+.searchIcon {
+  font-size: 18px;
+}
